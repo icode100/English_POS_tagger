@@ -100,7 +100,6 @@ ENGLISH_POS_TAGGER/
 
 - numpy
 - pandas
-- pickle
 
 To install the dependencies, run:
 
