@@ -40,19 +40,16 @@ To install and run the POS tagger, follow these steps:
 
 ## Usage
 
-To use the POS tagger, you can check my app 
+To use the POS tagger, you can check [my app](https://englishpostagger.streamlit.app/)
 
-```bash
-python pos_tagger.py "Your sentence here."
-```
+## Scores
 
-Example:
+| Metric       | Precision | Recall | F1-Score | Support |
+|--------------|-----------|--------|----------|---------|
+| Accuracy     |           |        | 0.51     | 21961   |
+| Macro Avg    | 0.48      | 0.45   | 0.46     | 21961   |
+| Weighted Avg | 0.54      | 0.51   | 0.52     | 21961   |
 
-```bash
-python pos_tagger.py "The quick brown fox jumps over the lazy dog."
-```
-
-This will output the sentence with each word tagged with its corresponding part of speech.
 
 ### Training the Model
 
