@@ -2,24 +2,16 @@ import pandas as pd
 import json
 from collections import defaultdict,Counter
 
-with open('../input/dev.json', 'r') as f:
-    json_data_1 = f.read()
-with open('../input/train.json','r') as f:
-    json_data_2 = f.read()
+with open('input/train.json','r') as f:
+    json_data = f.read()
     
-dataset_1 = json.loads(json_data_1)
-for item in dataset_1:
+
+dataset = json.loads(json_data)
+for item in dataset:
     item['sentence'].insert(0,'<s>')
     item['sentence'].append('</s>')
     item['labels'].insert(0,'<s>')
     item['labels'].append('</s>')
-dataset_2 = json.loads(json_data_2)
-for item in dataset_2:
-    item['sentence'].insert(0,'<s>')
-    item['sentence'].append('</s>')
-    item['labels'].insert(0,'<s>')
-    item['labels'].append('</s>')
-dataset = dataset_1+dataset_2
 print(f'length of dataset is {len(dataset)}')
 
 state_tags = defaultdict(set)

@@ -8,6 +8,7 @@ This project is an implementation of an English Part-of-Speech (POS) tagger usin
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Scores](#scores)
 - [File Structure](#file-structure)
 - [Dependencies](#dependencies)
 
