@@ -39,19 +39,7 @@ To install and run the POS tagger, follow these steps:
 
 ## Usage
 
-To use the POS tagger, you can check my app 
-
-```bash
-python pos_tagger.py "Your sentence here."
-```
-
-Example:
-
-```bash
-python pos_tagger.py "The quick brown fox jumps over the lazy dog."
-```
-
-This will output the sentence with each word tagged with its corresponding part of speech.
+To use the POS tagger, you can check [my app](https://englishpostagger.streamlit.app/)
 
 ### Training the Model
 
